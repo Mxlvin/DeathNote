@@ -1,0 +1,7 @@
+note:
+  material: PAPER
+  display:
+    name: '&a&lCash-Note &7(Right Click)'
+    lores:
+      - '&dValue: &5%note_value%'
+      - '&dSigner: &5%player_name%'
