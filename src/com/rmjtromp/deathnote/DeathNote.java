@@ -66,7 +66,7 @@ public class DeathNote extends JavaPlugin {
 			
 			@EventHandler
 			public void onPlayerDeath(PlayerDeathEvent e) {
-				if(econ != null && e.getEntity().getWorld().getGameRuleValue(GameRule.KEEP_INVENTORY)) {
+				if(econ != null && !e.getEntity().getWorld().getGameRuleValue(GameRule.KEEP_INVENTORY)) {
 					double balance = econ.getBalance(e.getEntity());
 					if(balance > 0.0D && econ.withdrawPlayer(e.getEntity(), balance).transactionSuccess()) {
 						ItemStack item = new ItemStack(MATERIAL);

@@ -1,7 +1,7 @@
 name: DeathNote
 description: Plugin drops a banknote everytime a player dies
 main: com.rmjtromp.deathnote.DeathNote
-version: 1.0.2
+version: 1.0.3
 api-version: 1.16
 depend: [Vault, PlaceholderAPI]
 author: RMJTromp
